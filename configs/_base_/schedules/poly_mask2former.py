@@ -1,0 +1,9 @@
+lr_config = dict(
+    policy='step',
+    gamma=0.1,
+    by_epoch=False,
+    step=[327778, 355092],
+    warmup='linear',
+    warmup_by_epoch=False,
+    warmup_ratio=1.0,  # no warmup
+    warmup_iters=10)

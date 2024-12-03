@@ -1,0 +1,6 @@
+[submodule "stable-diffusion"]
+	path = stable-diffusion
+	url = https://github.com/runwayml/stable-diffusion
+#[submodule "VPD"]
+#	path = VPD
+#	url = https://github.com/wl-zhao/VPD/tree/main

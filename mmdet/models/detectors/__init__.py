@@ -1,0 +1,167 @@
+# Copyright (c) OpenMMLab. All rights reserved.
+from .atss import ATSS
+from .autoassign import AutoAssign
+from .base import BaseDetector
+from .cascade_rcnn import CascadeRCNN
+from .centernet import CenterNet
+from .cornernet import CornerNet
+from .ddod import DDOD
+from .deformable_detr import DeformableDETR
+from .detr import DETR
+from .fast_rcnn import FastRCNN
+from .faster_rcnn import FasterRCNN
+from .fcos import FCOS
+from .fovea import FOVEA
+from .fsaf import FSAF
+from .gfl import GFL
+from .grid_rcnn import GridRCNN
+from .htc import HybridTaskCascade
+from .kd_one_stage import KnowledgeDistillationSingleStageDetector
+from .lad import LAD
+from .mask2former import Mask2Former
+from .mask_rcnn import MaskRCNN
+from .mask_rcnn_panoptic import MaskRCNNPanoptic
+from .mask_rcnn_panoptic_diff import MaskRCNNPanopticDiff
+from .mask_rcnn_panoptic_devil_savingForAcc import MaskRCNNPanopticDevilSaveAcc
+from .mask_rcnn_panoptic_diff_unfrozen import MaskRCNNPanopticDiffUnfrozen
+from .mask_rcnn_panoptic_diff_unfrozen_freezing import MaskRCNNPanopticDiffUnfrozenFreezing
+from .mask_rcnn_panoptic_diff_unfrozen_freezing_simpleFPN import MaskRCNNPanopticDiffUnfrozenFreezingSimpleNeck
+from .mask_rcnn_panoptic_diff_unfrozenNoFPN import MaskRCNNPanopticDiffUnfrozenNoFPN
+from .mask_rcnn_panoptic_diff_unfrozenSimpleFPN import MaskRCNNPanopticDiffUnfrozenSimpleFPN
+from .mask_rcnn_panoptic_diff_unfrozenSimpleFPNNoProp import MaskRCNNPanopticDiffUnfrozenSimpleFPNNoProp
+from .mask_rcnn_panoptic_diff_unfrozenSimpleFPNOnly import MaskRCNNPanopticDiffUnfrozenSimpleFPNOnly
+from .mask_rcnn_panoptic_diff_unfrozen_unet import MaskRCNNPanopticDiffUnfrozenUnet
+from .mask_rcnn_panoptic_resnet_fpn import DenseCLIP_MaskRCNNFPN
+from .mask_rcnn_panoptic_vit import DenseCLIP_MaskRCNN_VIT
+from .mask_rcnn_panoptic_resnetPure import MaskRCNNPanopticResnetPure
+from .mask_rcnn_panoptic_resnetPureUnfrozen import MaskRCNNPanopticResnetPureUnfrozen
+from .mask_rcnn_panoptic_vitPure import MaskRCNNPanopticVitPure
+from .mask_rcnn_panoptic_vitPure_simpleFPN import MaskRCNNPanopticVitPureSimpleFPN
+from .mask_rcnn_panoptic_vitPure_noFPN import MaskRCNNPanopticVitPureNoFPN
+from .mask_rcnn_panoptic_diff_unfrozen_ver2 import MaskRCNNPanopticDiffUnfrozenVer2
+
+from .mask_rcnn_panoptic_pseudo import MaskRCNNPanopticPS
+from .mask_rcnn_panoptic_devil import MaskRCNNPanopticDevil
+from .mask_rcnn_panoptic_devil_inst_semantic import MaskRCNNPanopticDevilInstSem
+from .mask_rcnn_panoptic_devil_inst_semantic_sameVIT import MaskRCNNPanopticDevilInstSemSameVIT
+from .mask_rcnn_panoptic_devil_inst import MaskRCNNPanopticDevilInst
+from .mask_rcnn_panoptic_devil_inst2 import MaskRCNNPanopticDevilInst2
+
+from .mask_rcnn_panoptic_devil_inst_semantic_sameVIT_norm_noCond import MaskRCNNPanopticDevilInstSemSameVITNormNoCond
+
+from .mask_rcnn_panoptic_sample import MaskRCNNPanopticSample
+
+from .mask_rcnn_panoptic_devil_inst_noCheck_avg import MaskRCNNPanopticDevilInstNoCheckAvg
+from .mask_rcnn_panoptic_devil_inst_noCheck_max import MaskRCNNPanopticDevilInstNoCheckMax
+from .mask_rcnn_panoptic_devil_pseudo import MaskRCNNPanopticDevilPS
+from .mask_rcnn_panoptic_devil_pseudo_conf import MaskRCNNPanopticDevilPSCONF
+from .mask_rcnn_panoptic_devil_inst_3 import MaskRCNNPanopticDevilInst3
+from .mask_rcnn_panoptic_devil_inst_4 import MaskRCNNPanopticDevilInst4
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck import  MaskRCNNPanopticDevilInst4NoCheckSize
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck_clip import MaskRCNNPanopticDevilInst4NoCheckSizeClip
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck_clip_simil import MaskRCNNPanopticDevilInst4NoCheckSizeClipSimil
+
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck_clip_meanPool import MaskRCNNPanopticDevilInst4NoCheckSizeClipMeanPool
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck_clip_meanPool_contrastive import MaskRCNNPanopticDevilInst4NoCheckSizeClipMeanPoolContrastive
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck_clip_meanPool_contrastive_weight import MaskRCNNPanopticDevilInst4NoCheckSizeClipMeanPoolContrastiveWeight
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck_clip_simil_meanPool import MaskRCNNPanopticDevilInst4NoCheckSizeClipSimilMeanPool
+
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck_clip_meanPool_mask import MaskRCNNPanopticDevilInst4NoCheckSizeClipMeanPoolMask
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck_clip_meanPool_contrastive_mask import MaskRCNNPanopticDevilInst4NoCheckSizeClipMeanPoolContrastiveMask
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck_clip_meanPool_contrastive_weight_mask import MaskRCNNPanopticDevilInst4NoCheckSizeClipMeanPoolContrastiveWeightMask
+from .mask_rcnn_panoptic_devil_inst_4_noSizeCheck_clip_simil_meanPool_mask import MaskRCNNPanopticDevilInst4NoCheckSizeClipSimilMeanPoolMask
+
+
+from .mask_rcnn_panoptic_devil_inst5 import MaskRCNNPanopticDevilInst5
+
+from .mask_rcnn_panoptic_devil_inst_text_crossEntropy import MaskRCNNPanopticDevilInstTextCrossEntropy
+from .mask_rcnn_panoptic_devil_inst_text_contexual import MaskRCNNPanopticDevilInstTextContexual
+
+from .mask_rcnn_panoptic_devil_inst_7 import MaskRCNNPanopticDevilInst7
+from .mask_rcnn_panoptic_devil_inst_8 import MaskRCNNPanopticDevilInst8
+
+from .mask_rcnn_panoptic_devil_inst_text import MaskRCNNPanopticDevilInstText
+from .mask_rcnn_panoptic_devil_inst_text_2 import MaskRCNNPanopticDevilInstText2
+from .mask_rcnn_panoptic_devil_inst_text_3 import MaskRCNNPanopticDevilInstText3
+
+from .mask_rcnn_panoptic_rpn_clip import MaskRCNNPanopticRPNClip
+
+from .mask_rcnn_panoptic_dacsTextEmbed import MaskRCNNPanopticDacsTextEmbed
+
+from .mask_rcnn_panoptic_poda import MaskRCNNPanopticPODA
+
+from  .mask_rcnn_panoptic_textRefineContext import MaskRCNNPanopticTextRefineContext
+from .mask_rcnn_panoptic_ContextTextRefineContext import MaskRCNNPanopticContextTextRefineContext
+
+
+
+from .mask_rcnn_panoptic_clip_resnet_vision_spatial import MaskRCNNPanopticClipResnetVisionSpatial
+from .mask_rcnn_panoptic_clip_vit_vision_spatial import MaskRCNNPanopticClipVitVisionSpatial
+
+from .mask_rcnn_panoptic_diff_fpnHead import MaskRCNNPanopticDiffFPNHead
+from .mask_rcnn_panoptic_vitPure_artificialFPN import MaskRCNNPanopticVitPureArtificialFPN
+
+from .mask_rcnn_panoptic_diff_unfrozen_t0 import MaskRCNNPanopticDiffUnfrozenT0
+
+from .mask_rcnn_panoptic_diff_unfrozen_t0_scaleRoi import MaskRCNNPanopticDiffUnfrozenT0ScaleRoi
+from .mask_rcnn_panoptic_diff_frozen_t0_scaleRoi import MaskRCNNPanopticDiffFrozenT0ScaleRoi
+from .mask_rcnn_panoptic_diff_frozen_t0_scaleRoiBoth import MaskRCNNPanopticDiffFrozenT0ScaleRoiBoth
+from .mask_rcnn_panoptic_diff_unfrozen_t0_scaleRoi_whereScale import MaskRCNNPanopticDiffUnfrozenT0ScaleRoiWhereScale
+from .mask_rcnn_panoptic_diff_unfrozen_t0_scaleRoi_fixingReceptive import MaskRCNNPanopticDiffUnfrozenT0ScaleRoiWhereScalefixRec
+from .mask_rcnn_panoptic_diff_frozen_t0_scaleRoiBothClipGradient import MaskRCNNPanopticDiffFrozenT0ScaleRoiBothClipGradient
+#from .mask_rcnn_panoptic_diff_unfrozen_t0_scaleRoi_bothWeighted import MaskRCNNPanopticDiffUnfrozenT0ScaleRoiBothWeighted
+
+from .mask_rcnn_panoptic_diff_unfrozen_t0_scaleRoi_bothWeighted_compDetached import MaskRCNNPanopticDiffUnfrozenT0ScaleRoiBothWeightedCompDetached
+from .mask_rcnn_panoptic_diff_unfrozen_t0_scaleRoi_bothWeighted_detached import MaskRCNNPanopticDiffUnfrozenT0ScaleRoiBothWeightedDetached
+from .mask_rcnn_panoptic_diff_unfrozen_t0_scaleRoi_bothWeighted_nonDetached import MaskRCNNPanopticDiffUnfrozenT0ScaleRoiBothWeightedNonDetached
+from .mask_rcnn_panoptic_diff_unfrozen_t0_scaleRoi_bothWeighted_nonDetached_noAttn import MaskRCNNPanopticDiffUnfrozenT0ScaleRoiBothWeightedNonDetachedNoAttn
+from .mask_rcnn_panoptic_diff_unfrozen_t0_scaleRoi_bothWeighted_nonDetachedGradientClip import MaskRCNNPanopticDiffUnfrozenT0ScaleRoiBothWeightedNonDetachedGradientClip
+from .mask_rcnn_panoptic_resnet import DenseCLIP_MaskRCNN
+from .clipDense import CLIPResNet, CLIPTextEncoder, CLIPVisionTransformer, CLIPResNetWithAttention
+#from .clipOrig import CLIPResNet, CLIPTextEncoder, CLIPVisionTransformer, CLIPResNetWithAttention
+
+
+from .mask_rcnn_panoptic_diff_unfrozen_unet_t0_reverse import MaskRCNNPanopticDiffUnetUnfrozenT0Reverse
+from .mask_rcnn_panoptic_diff_unfrozen_t0_reverse import MaskRCNNPanopticDiffUnfrozenT0Reverse
+
+from .mask_rcnn_panoptic_diff_unfrozen_unet_t0 import MaskRCNNPanopticDiffUnfrozenUnetT0
+
+from .mask_rcnn_panoptic_diff_unet_t0 import MaskRCNNPanopticDiffUnetT0
+from .mask_rcnn_panoptic_diff_t0 import MaskRCNNPanopticDiffT0
+#from .mask_rcnn_panoptic_diff_OnlySemantic import MaskRCNNPanopticDiffOnlySemantic
+from .mask_scoring_rcnn import MaskScoringRCNN
+from .maskformer import MaskFormer
+from .nasfcos import NASFCOS
+from .paa import PAA
+from .panoptic_fpn import PanopticFPN
+from .panoptic_two_stage_segmentor import TwoStagePanopticSegmentor
+from .point_rend import PointRend
+from .queryinst import QueryInst
+from .reppoints_detector import RepPointsDetector
+from .retinanet import RetinaNet
+from .rpn import RPN
+from .scnet import SCNet
+from .single_stage import SingleStageDetector
+from .solo import SOLO
+from .solov2 import SOLOv2
+from .sparse_rcnn import SparseRCNN
+from .tood import TOOD
+from .trident_faster_rcnn import TridentFasterRCNN
+from .two_stage import TwoStageDetector
+from .vfnet import VFNet
+from .yolact import YOLACT
+from .yolo import YOLOV3
+from .yolof import YOLOF
+from .yolox import YOLOX
+
+__all__ = [
+    'ATSS', 'BaseDetector', 'SingleStageDetector', 'TwoStageDetector', 'RPN',
+    'KnowledgeDistillationSingleStageDetector', 'FastRCNN', 'FasterRCNN',
+    'MaskRCNN', 'CascadeRCNN', 'HybridTaskCascade', 'RetinaNet', 'FCOS',
+    'GridRCNN', 'MaskScoringRCNN', 'RepPointsDetector', 'FOVEA', 'FSAF',
+    'NASFCOS', 'PointRend', 'GFL', 'CornerNet', 'PAA', 'YOLOV3', 'YOLACT',
+    'VFNet', 'DETR', 'TridentFasterRCNN', 'SparseRCNN', 'SCNet', 'SOLO',
+    'SOLOv2', 'DeformableDETR', 'AutoAssign', 'YOLOF', 'CenterNet', 'YOLOX',
+    'TwoStagePanopticSegmentor', 'PanopticFPN', 'QueryInst', 'LAD', 'TOOD',
+    'MaskFormer', 'DDOD', 'Mask2Former', 'MaskRCNNPanoptic', 'MaskRCNNPanopticDiff'
+]

@@ -1,0 +1,17 @@
+addict==2.4.0
+clip @ git+https://github.com/openai/CLIP.git@a1d071733d7111c9c014f024669f959182114e33
+ftfy==6.1.1
+importlib-metadata==6.8.0
+-e git+https://github.com/CompVis/stable-diffusion.git@21f890f9da3cfbeaba8e2ac3c425ee9e998d5229#egg=latent_diffusion
+lightning-utilities==0.9.0
+mmcv-full==1.6.1
+-e git+https://github.com/open-mmlab/mmdetection.git@f78af7785ada87f1ced75a2313746e4ba3149760#egg=mmdet
+openmim==0.3.9
+pyDeprecate==0.3.1
+pytorch-lightning==1.4.2
+safetensors==0.4.0
+taming-transformers==0.0.1
+taming-transformers-rom1504==0.0.6
+timm==0.9.7
+torchmetrics==0.6.0
+typing_extensions==4.8.0
